@@ -1,0 +1,23 @@
+{
+  "name": "monera-pr-bot",
+  "version": "1.0.0",
+  "description": "Create Pull Request for GitHub",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "author": "Mauro Mandracchia <info@ideabile.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.3.13",
+    "babel-core": "^6.3.13",
+    "github-api": "^0.10.7",
+    "hapi": "^9.0.0",
+    "octonode": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
