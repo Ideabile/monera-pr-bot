@@ -14,6 +14,6 @@ ADD ${MAIN}package.json /package.json
 RUN npm install
 ADD $MAIN /
 RUN apt-get clean
-RUN npm compile
+RUN npm run compile
 
 ENTRYPOINT ["/usr/local/bin/node", "./lib/index.js"]
